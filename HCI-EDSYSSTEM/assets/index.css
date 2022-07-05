@@ -1,0 +1,96 @@
+#angularCourse{
+    background-image: url('./angular.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#reactCourse{
+    background-image: url('./react.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#vueCourse{
+    background-image: url('./vuepng.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#reduxCourse{
+    background-image: url('./redux.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#jsCourse{
+    background-image: url('./js.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#csCourse{
+    background-image: url('./cs.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  
+  }
+
+.course-card{
+    height: 250px;
+}
+
+.course-card:hover .card-hover-effect{
+    opacity: 1;
+}
+
+.card-hover-effect{
+    opacity: 0;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #A16BB4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.modalReactImage{
+    height: 180px;
+    width: 180px;
+    background-image: url('./react.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.modalAngularImage{
+    height: 180px;
+    width: 180px;
+    background-image: url('./angular.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/global.css" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="./index.html">
+            <svg
+              width="87"
+              height="48"
+              viewBox="0 0 87 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26 29V19H10V29H26ZM26 17C26.5304 17 27.0391 17.2107 27.4142 17.5858C27.7893 17.9609 28 18.4696 28 19V29C28 30.11 27.1 31 26 31H20V33H22V35H14V33H16V31H10C8.89 31 8 30.11 8 29V19C8 18.4696 8.21071 17.9609 8.58579 17.5858C8.96086 17.2107 9.46957 17 10 17H26ZM6 15V27H4V15C4 14.4696 4.21071 13.9609 4.58579 13.5858C4.96086 13.2107 5.46957 13 6 13H24V15H6Z"
+                fill="#A16BB4"
+              />
+              <path
+                d="M34.4 29V22.448H35.352V29H34.4ZM34.876 21.174C34.6613 21.174 34.4793 21.0993 34.33 20.95C34.19 20.8007 34.12 20.6187 34.12 20.404C34.12 20.1987 34.19 20.026 34.33 19.886C34.4793 19.7367 34.6613 19.662 34.876 19.662C35.0813 19.662 35.2587 19.7367 35.408 19.886C35.5573 20.026 35.632 20.2033 35.632 20.418C35.632 20.6233 35.5573 20.8007 35.408 20.95C35.2587 21.0993 35.0813 21.174 34.876 21.174ZM37.8521 29V19.452H38.9021V28.132H43.2001V29H37.8521ZM44.5103 29V19.452H49.8583V20.334H45.5603V23.666H48.9203V24.52H45.5603V28.132H49.9003V29H44.5103ZM57.4873 29L56.5073 26.326H52.5453L51.6633 29H50.6133L54.0013 19.452H54.9813L58.4673 29H57.4873ZM52.8673 25.458H56.1853L54.4773 20.824L52.8673 25.458ZM65.1028 29L62.6808 24.786H60.7908V29H59.7408V19.452H62.9328C63.5114 19.452 64.0201 19.564 64.4588 19.788C64.8974 20.012 65.2334 20.3293 65.4668 20.74C65.7001 21.1413 65.8168 21.6033 65.8168 22.126C65.8168 22.7607 65.6254 23.3067 65.2428 23.764C64.8601 24.212 64.3514 24.5153 63.7168 24.674L66.2088 29H65.1028ZM60.7908 23.918H62.7928C63.4088 23.918 63.8801 23.7547 64.2068 23.428C64.5428 23.1013 64.7108 22.6673 64.7108 22.126C64.7108 21.5847 64.5428 21.1507 64.2068 20.824C63.8801 20.488 63.4088 20.32 62.7928 20.32H60.7908V23.918ZM67.8759 29V19.452H68.9959L73.8539 27.418V19.452H74.9039V29H73.7839L68.9259 21.062V29H67.8759Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-2">
+      <div class="row justify-content-md-center">
+        <div class="col-1 text-center pb-1 breadcrumb-main">
+          <a class="current-link" href="/"> Home / </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-2" id="mainContainer">
+      <div class="row justify-content-md-center">
+        <div class="col-9">
+          <div class="courses-container grid-container">
+            <div class="card course-card" id="reactCourse">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+              ></div>
+              <div class="card-hover-effect">
+                <div>React, getting started</div>
+                <div data-bs-toggle="modal" data-bs-target="#reactModal">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+                id="angularCourse"
+              ></div>
+              <div class="card-hover-effect">
+                <div>Angular, getting started</div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+                id="vueCourse"
+              ></div>
+              <div class="card-hover-effect">
+                <div>Angular, getting started</div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+                id="reduxCourse"
+              ></div>
+              <div class="card-hover-effect">
+                <div>Redux, a pattern that will help you</div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+                id="csCourse"
+              ></div>
+              <div class="card-hover-effect">
+                <div>Angular, getting started</div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div
+                class="card-body d-flex justify-content-between align-items-center py-1"
+                id="jsCourse"
+              ></div>
+              <div class="card-hover-effect">
+                <div>Angular, getting started</div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 16V12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8H12.01"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card">
+            <div
+              class="card-body d-flex justify-content-between align-items-center py-1"
+            >
+              <div>User 1</div>
+              <div>
+                <svg
+                  width="87"
+                  height="44"
+                  viewBox="0 0 87 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.73 28L14.5 25.45L10.27 28L11.39 23.19L7.66 19.96L12.58 19.54L14.5 15L16.42 19.53L21.34 19.95L17.61 23.18L18.73 28ZM14.5 12C8.97 12 4.5 16.5 4.5 22C4.5 24.6522 5.55357 27.1957 7.42893 29.0711C8.35752 29.9997 9.45991 30.7362 10.6732 31.2388C11.8864 31.7413 13.1868 32 14.5 32C17.1522 32 19.6957 30.9464 21.5711 29.0711C23.4464 27.1957 24.5 24.6522 24.5 22C24.5 20.6868 24.2413 19.3864 23.7388 18.1732C23.2362 16.9599 22.4997 15.8575 21.5711 14.9289C20.6425 14.0003 19.5401 13.2638 18.3268 12.7612C17.1136 12.2587 15.8132 12 14.5 12V12Z"
+                    fill="#6B7FB4"
+                  />
+                  <path
+                    d="M47.73 28L43.5 25.45L39.27 28L40.39 23.19L36.66 19.96L41.58 19.54L43.5 15L45.42 19.53L50.34 19.95L46.61 23.18L47.73 28ZM43.5 12C37.97 12 33.5 16.5 33.5 22C33.5 24.6522 34.5536 27.1957 36.4289 29.0711C37.3575 29.9997 38.4599 30.7362 39.6732 31.2388C40.8864 31.7413 42.1868 32 43.5 32C46.1522 32 48.6957 30.9464 50.5711 29.0711C52.4464 27.1957 53.5 24.6522 53.5 22C53.5 20.6868 53.2413 19.3864 52.7388 18.1732C52.2362 16.9599 51.4997 15.8575 50.5711 14.9289C49.6425 14.0003 48.5401 13.2638 47.3268 12.7612C46.1136 12.2587 44.8132 12 43.5 12V12Z"
+                    fill="#6B7FB4"
+                  />
+                  <path
+                    d="M76.73 28L72.5 25.45L68.27 28L69.39 23.19L65.66 19.96L70.58 19.54L72.5 15L74.42 19.53L79.34 19.95L75.61 23.18L76.73 28ZM72.5 12C66.97 12 62.5 16.5 62.5 22C62.5 24.6522 63.5536 27.1957 65.4289 29.0711C66.3575 29.9997 67.4599 30.7362 68.6732 31.2388C69.8864 31.7413 71.1868 32 72.5 32C75.1522 32 77.6957 30.9464 79.5711 29.0711C81.4464 27.1957 82.5 24.6522 82.5 22C82.5 20.6868 82.2413 19.3864 81.7388 18.1732C81.2362 16.9599 80.4997 15.8575 79.5711 14.9289C78.6425 14.0003 77.5401 13.2638 76.3268 12.7612C75.1136 12.2587 73.8132 12 72.5 12V12Z"
+                    fill="#6B7FB4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-2">
+            <div class="card-body">
+              <ul>
+                <li>recent activity..</li>
+                <li>recent activity..</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="reactModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="reactModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content glassBackground">
+          <div class="left">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="d-flex justify-content-center">
+                <div class="modalReactImage"></div>
+              </div>
+              <hr />
+              <div class="small-text">
+                React (also known as React.js or ReactJS) is a free and
+                open-source front-end JavaScript library for building user
+                interfaces based on UI components. It is maintained by Meta
+                (formerly Facebook) and a community of individual developers and
+                companies.React can be used as a base in the development of
+                single-page, mobile, or server-rendered applications with
+                frameworks like Next.js. However, React is only concerned with
+                state management and rendering that state to the DOM, so
+                creating React applications usually requires the use of
+                additional libraries for routing, as well as certain client-side
+                functionality
+              </div>
+              <div class="buttonsForModal">
+                <a href="./test0.html">
+                  <button class="button-test">Test yourself</button>
+                </a>
+                <a href="./lecture0.html">
+                  <button class="button-learn">Start Learning</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-8">
+              <h1>Lessons for react</h1>
+              <hr />
+              <ul>
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    data-bs-target="#topic1"
+                    aria-expanded="false"
+                    aria-controls="topic1"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#6B7FB4"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Introduction to React and way of working with React
+                  </div>
+                  <div class="collapse" id="topic1">
+                    <ul>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="introduction">Introduction</a>
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup">Setting up the environment</a>
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup"
+                          >Starting the application component</a
+                        >
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup"
+                          >Creating the first component</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    data-bs-target="#topic2"
+                    aria-expanded="false"
+                    aria-controls="topic2"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#6B7FB4"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    The difference between pure html and the REACT html
+                  </div>
+                  <div class="collapse" id="topic2">
+                    <ul>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="introduction">Classes in react</a>
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup">Inline style</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    data-bs-target="#topic3"
+                    aria-expanded="false"
+                    aria-controls="topic3"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#6B7FB4"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    JSX
+                  </div>
+                  <div class="collapse" id="topic3">
+                    <ul>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="introduction">Writting the first JSX line of code</a>
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup">Advanced JSX concepts</a>
+                      </li>
+                      <li>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 18L15 12L9 6"
+                            stroke="#6B7FB4"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="environentSetup">Conditional rendering</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
